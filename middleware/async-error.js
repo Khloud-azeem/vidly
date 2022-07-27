@@ -3,7 +3,6 @@ module.exports = function (handler) {
         try {
             await handler(req, res);
         } catch (ex) {
-            //hayroo7 ll next middleware which is error mw
             next(ex);
         }
     };
